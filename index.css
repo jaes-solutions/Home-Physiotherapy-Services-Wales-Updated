@@ -358,6 +358,9 @@ header .flex.items-center.space-x-8 {
   100% { transform: translateY(0); }
 }
 
+
+   
+
 /* ---------- New Site Footer (complete replacement) ---------- */
 .site-footer {
   --purple-700: #9886c2;
@@ -476,6 +479,7 @@ header .flex.items-center.space-x-8 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
+
 /* social icons */
 .site-footer .social {
   display: flex;
@@ -541,4 +545,5 @@ header .flex.items-center.space-x-8 {
 }
 
 /* utility */
+
 .site-footer .muted { color: rgba(255,255,255,0.82); font-size: 0.94rem; }
