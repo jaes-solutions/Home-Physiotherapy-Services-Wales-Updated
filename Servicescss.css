@@ -1,0 +1,187 @@
+body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      
+/* ---------- New Site Footer (complete replacement) ---------- */
+.site-footer {
+  --purple-700: #9886c2;
+  --purple-600: #9486c0;
+  
+  background: linear-gradient(180deg, var(--purple-700) 0%, #a686f1 100%);
+  color: #ffffff;
+  padding: 56px 20px 28px;
+  box-shadow: 0 -10px 40px rgba(29, 26, 26, 0.103);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* container */
+.site-footer .footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* brand column */
+.site-footer .footer-brand {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.site-footer .footer-brand img {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+.site-footer .brand-info .brand-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.site-footer .brand-info .brand-tag {
+  color: rgba(255,255,255,0.92);
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+/* column headings */
+.site-footer h4 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* link lists */
+.site-footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.site-footer .footer-links li {
+  margin-bottom: 8px;
+}
+.site-footer .footer-links a {
+  color: rgba(255,255,255,0.93);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color .16s ease, transform .12s ease;
+}
+.site-footer .footer-links a:hover {
+  color: #f3e8ff;
+  transform: translateX(4px);
+}
+
+/* contact & newsletter */
+.site-footer .contact-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: rgba(255,255,255,0.95);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.site-footer .newsletter {
+  margin-top: 8px;
+}
+.site-footer .newsletter form {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.site-footer .newsletter input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  outline: none;
+}
+.site-footer .newsletter input::placeholder { color: rgba(255,255,255,0.7); }
+.site-footer .newsletter button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  color: var(--purple-700);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.site-footer .newsletter button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+/* social icons */
+.site-footer .social {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.site-footer .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.14s ease, background 0.14s ease;
+  font-size: 1.3rem; /* make the icon a good size */
+}
+
+.site-footer .social a:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* bottom bar */
+.site-footer .footer-bottom {
+  display: flex;
+  flex-direction: column;    /* stack children vertically */
+  align-items: center;       /* center horizontally */
+  justify-content: center;
+  gap: 6px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+}
+.site-footer .footer-bottom > div {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0;                 /* keep each div on its own centered line */
+}
+
+/* Optional: slightly reduce font-size on small screens to avoid wrapping */
+@media (max-width: 420px) {
+  .site-footer .footer-bottom { gap: 4px; }
+  .site-footer .footer-bottom > div { font-size: 0.92rem; }
+}
+
+/* small screens */
+@media (max-width: 960px) {
+  .site-footer .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .site-footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .site-footer .brand-info { display: block; }
+}
+
+/* utility */
+.site-footer .muted { color: rgba(255,255,255,0.82); font-size: 0.94rem; }
